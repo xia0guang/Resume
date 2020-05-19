@@ -1,0 +1,163 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+% https://files.nyu.edu/cy761/public/xiaoguangwu.pdf
+
+
+\documentclass[10pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.9, top = 1.5cm, bottom = 1.5cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+%\usepackage{hyperref}
+%\hypersetup{
+%    colorlinks=true,
+%    linkcolor=gray,
+%    filecolor=magenta,      
+%    urlcolor=cyan,
+%}
+
+% personal data
+\vspace*{-0.5cm}
+\name{Ray}{Wu}
+%\title{title}                               % optional, remove / comment the line if not wanted
+\address{San Jose, CA}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{(201)-423-3982}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{imwuxiaoguang@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{//github.com/xia0guang}                         % optional, remove / comment the line if not wanted
+%\social[linkedin]{xiaoguangwu}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{morlight1989}                             % optional, remove / comment the line if not wanted
+%\social[github]{xia0guang}                              % optional, remove / comment the line if not wanted
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+%\section{Objective}
+%\cvitem{}{Seeking for a Software Engineer position in Android development or web development}
+
+\vspace*{-1.3cm}
+\section{Summary}
+\cvitem{} {* 5+ years experience in \textbf{Mobile} development, developed several applications/SDKs;}
+\cvitem{} {* Deep familiarity with debugging, performance measurement and test-driven development; }
+\cvitem{} {* Extensive knowledge on large scale mobile development environment by utilizing tools like \textbf{Buck}, \textbf{Bazel} and \textbf{Snapshot Test} etc to ensure reliability of mobile development process, feature flag management tools to ensure quality of staging rollout for mobile apps; }
+\cvitem{} {*  Extensive knowledge of iOS frameworks like CoreFoundation and UIKit and widely used third party frameworks like SnapKit and RxSwift etc;  }
+\cvitem{} {* In-depth knowledge of mobile design pattern like \textbf{MVC} and \textbf{MVVM}, as well as Uber's cross-platform mobile architecture \textbf{RIB} and \textbf{Needle} (Dependency Injection Tool); }
+\cvitem{} {* Good communication skills, research skills, problem solving skills, enthusiastic about new technology and trend; }
+\cvitem{} {* Programming languages: \textbf{Swift, Objective C, Java, Python}.}
+
+\section{Work Experience}
+
+\cventry{\footnotesize{Nov 2018 - Present}}
+{\textbf{Software Engineer}}
+{Uber Technologies, Inc.}{San Francisco, CA}{}{
+\begin{itemize} 
+\item Play key role in login sign-up mobile component and created a standard library to unify the login sign-up experience which helps Uber reached hundreds of millions users globally for all Uber's apps, such as Uber, Uber Eats, Uber Driver. 
+\item Excel at improvement of security feature by implementing standard OAuth 2.0 Protocol for first party apps like Uber, Uber Driver. OAuth 2.0 integration substantially increased overall accounts safety and reduced hundreds of malicious attacks like Account Take Over.
+\item Participate in developing on chat platform for all Uber's apps and implementing high impacted features on privacy and reachability which significantly improved awareness of users' privacy protection. 
+\item Experience on a large scale mobile development environment by utilizing tools like Buck, Bazel and Snapshot Test etc to ensure the reliability of mobile development process, feature flag management tools to ensure the quality of staging rollout for mobile apps. 
+\item Extensive knowledge of iOS frameworks like CoreFoundation and UIKit and widely used third party frameworks like SnapKit and RxSwift etc. Extensive knowledge of mobile design pattern like MVC and MVVM, as well as Uber's cross-platform mobile architecture RIB and Needle (Dependency Injection Tool).
+\item Lead iOS team and responsible for planning, designing, quality assurance and feature triaging. Mentor other iOS engineers and help them rapidly wrap up onboarding process to the team and Uber specific mobile development practice and protocols. 
+\end{itemize}} 
+
+\vspace*{0.5cm}
+\cventry{\footnotesize{Oct 2017 - Nov 2018}}
+{\textbf{Senior Software Engineer}}
+{GroundTruth}{Mountain View, CA}{}{
+\begin{itemize}
+\item Led the development of Location SDK, which empowers the publishers have a better mechanism to collecting and analysis users' behavior.
+\item Location SDK uses iOS native \textbf{CLLocationManager} and other accessories like region monitoring with our algorithms to filter location intelligently and massively reduce battery consumption.
+\item Maintained the development of Display SDK, with the support of MRAID and VAST, and reached in total around 60M users.
+\item Closely worked with backend and integrated backend api with native network framework, using notification dispatch mechanism to decouple architecture.
+\item Uploaded Location SDK framework to Cocoapod and fixed a few framework/binary compiling and distributing related problems.
+\item Experienced in XCode, Appium, Cocoapod, Hockapp, RESTful API, Git etc.
+\end{itemize}} 
+
+\vspace*{0.5cm}
+\cventry{\footnotesize{Feb 2016 - Sep 2017}}
+{\textbf{Software Engineer}}
+{GroundTruth}{Mountain View, CA}{}{
+\begin{itemize}
+\item Fully in charge of the development of Display SDK, with the support of MRAID and VAST, and reached in total around 60M users.
+\item Display SDK bridges the publishers and GroundTruth read-time bidding ad exchange server and eliminates the heavy UI work by providing all in one solutions and elegant responsive ad view.
+\item Closely worked with backend and integrated backend api with native network framework, using notification dispatch mechanism to decouple architecture.
+\item Uploaded Display SDK framework to Cocoapod and fixed a few framework/binary compiling and distributing related problems, distributed apps thru Hockapp.
+\item Helped on the development of native iOS apps,  \textbf{Showcase}, \textbf{Scoop}, and developed a demo app for Display SDK.
+\item Used Appium for UI test for Display SDK, with Python.
+\item Experienced in XCode, Appium, Cocoapod, Hockapp, RESTful API, Git etc.
+\end{itemize}} 
+
+\newpage
+
+\vspace*{0.5cm}
+\cventry{\footnotesize{Jun 2015 - Dec 2015}}
+{\textbf{Software Engineer, Contractor}}
+{Samsung Research America}{Mountain View, CA}{}{
+\begin{itemize}
+\item Developed indoor-map-and-localization-related demo Android apps.
+\item Contributed to the full lifecycle development of the application, from planning, requirements gathering, development, testing.
+\item Contributed to graphics rendering and modeling with OpenGL ES.
+\item Close cooperated with backend for database design.
+\item Solid experienced in Android SDK: Activity, Fragment, Android Data Binding, Android Sensors, Handler and Messenger, Intent Services, Broadcast Receiver, Location Manager/FusedLocationProviderApi, Push Notification, Google Play Services, etc.
+\item Followed Agile-Scrum for the entire development process.
+\item Experienced in MongoDB, RESTful API, Git, JSON, etc.
+\end{itemize}} 
+
+
+\vspace*{0.5cm}
+\cventry{\footnotesize{Dec 2014--Jun 2015}}
+{\textbf{Android Developer}}
+{Simbiosys Mobile Solutions}{Frement, CA}{}{
+\begin{itemize}
+\item Contributed to the full lifecycle development of the application, from planning, requirements gathering, development, testing.
+\item UI Design and Developed using the Android SDK and Android Device.
+\item Contributed implementation of backend server and  RESTFul API  with Django and Parse.
+\item Followed Agile-Scrum for the entire development process.
+\item Experienced in Android debugging tools such as Monitor, DDMS, ADB, Logcat and Eclipse addons ADT tools.
+\end{itemize}} 
+
+
+%\vspace*{-0.5cm}
+\section{Education}
+\cventry{\footnotesize{Sep 2012--May 2014}}
+{\textbf{M.Sci. in Computer Science}}
+{Stevens Institute of Technology}{}{\textit{GPA: 3.6/4.0}}{}  % arguments 3 to 6 can be left empty
+%\vspace*{-0.3cm}
+\cventry{\footnotesize{Sep 2007--Jun 2011}}
+{\textbf{B.Eng. in Electrical Engineering}}
+{Southwest Jiaotong University}{}{}{}
+
+\end{document}
+
+
+
+%% end of file `template.tex'.

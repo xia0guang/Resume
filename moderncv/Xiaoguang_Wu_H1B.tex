@@ -1,0 +1,122 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+% https://files.nyu.edu/cy761/public/xiaoguangwu.pdf
+
+
+\documentclass[12pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8, top = 1.5cm, bottom = 1.5cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+%\usepackage{hyperref}
+%\hypersetup{
+%    colorlinks=true,
+%    linkcolor=gray,
+%    filecolor=magenta,      
+%    urlcolor=cyan,
+%}
+
+% personal data
+\name{Xiaoguang(Ray)}{Wu}
+%\title{title}                               % optional, remove / comment the line if not wanted
+\address{1623 Melody Ln, San Jose, CA 95133}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{(201)-423-3982}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{ray.wu@uber.com}                               % optional, remove / comment the line if not wanted
+%\homepage{//github.com/xia0guang}                         % optional, remove / comment the line if not wanted
+%\social[linkedin]{xiaoguangwu}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{morlight1989}                             % optional, remove / comment the line if not wanted
+%\social[github]{xia0guang}                              % optional, remove / comment the line if not wanted
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Work Experience}
+
+\cventry{\footnotesize{Nov 2018 - Present}}
+{\textbf{Software Engineer}}
+{Uber Technologies, Inc}{}{}{
+\begin{itemize}
+\item Design and develop mobile frameworks and SDK that is customizable and extensible to support both Uber and 3rd party partner mobile apps
+\item Design and implement customer facing product features across all Uber mobile applications that have a direct impact on our business growth and customer experience across login, signup and account management
+\item Handle rapid change and experimentation in a sustainable way and support metrics for analytics, marketing, growth and security
+\item Collaborate with multiple product, data and engineering teams, as well as external partnerships for integration into our platform
+\item Work with Product, UX and Design to growth and customer experience metrics
+\item Develop mobile libraries to help differentiate bots from real users
+\item Develop SDK for authentication protocols e.g. OAuth 2.0, SAML, X.509
+\item Develop authentication factors e.g. TOTP, face/voice recognition, implicit authentication, carrier-based authentication, etc and help drive towards our goal of passwordless authentication
+\item Write quality code and documentation which can be used as the example for your company
+\item Mentor other engineers and build a strong culture of quality, handle conflicts well and help build consensus
+\item Utilize XCode from Apple for iOS mobile library development
+\end{itemize}} 
+
+\vspace*{0.5cm}
+\cventry{\footnotesize{Feb 2016 - Nov 2018}}
+{\textbf{Senior Software Engineer}}
+{GroundTruth(formerly xAd)}{}{}{
+\begin{itemize}
+\item Design and develop mobile frameworks and SDK that is customizable and extensible to support online advertising business by being integrated by customers
+\item Design and implement customer facing product features across all internal testing applications that have a direct impact on our business growth and customer experience across online advertising business
+\item Handle rapid change and experimentation in a sustainable way and support metrics for analytics, marketing, growth and security
+\item Collaborate with multiple product, data and engineering teams, as well as external partnerships for integration into our platform
+\item Work with Product, UX and Design to growth and customer experience metrics
+\item Develop mobile SDK to demonstrate location targeting advertisement and closely work with customers to integrate with their system
+\item Write quality code and documentation which can be used as the example for your company
+\item Mentor other engineers and build a strong culture of quality, handle conflicts well and help build consensus
+\item Utilize XCode from Apple for iOS mobile library development with Swift programing language
+\end{itemize}} 
+
+\vspace*{0.5cm}
+\cventry{\footnotesize{May 2015 - Feb 2016}}
+{\textbf{Android Developer}}
+{SIMbiosys Mobile Solutions, Inc}{}{}{
+\begin{itemize}
+\item Developed Android apps for client company;
+\item Work for client company as a consultant and develop internal demo android apps;
+\item Developed three internal indoor-map-and-localization-related Android apps
+\item Contributed to the full lifecycle development of the application, from planning, requirements gathering, development, testing.
+\item Contributed to graphics rendering and modeling with OpenGL ES.
+\item Solid experienced in Android SDK: Activities, Android Data Binding, Fragments, Android Sensors, Handler and Messenger, Intent Services, Broadcast Receiver, Location Manager, Push Notification, Google Play Services, etc.
+\item Followed Agile-Scrum for the entire development process.
+\end{itemize}} 
+
+\section{Education}
+\cventry{\footnotesize{Sep 2012--May 2014}}
+{\textbf{M.Sci. in Computer Science}}
+{Stevens Institute of Technology}{}{\textit{GPA: 3.6/4.0}}{1 Castle Point Terrace, Hoboken, NJ 07030
+}  % arguments 3 to 6 can be left empty
+
+\vspace*{0.5cm}
+\cventry{\footnotesize{Sep 2007--Jun 2011}}
+{\textbf{B.Eng. in Electrical Engineering}}
+{Southwest Jiaotong University}{}{}{999 Xi'an Rd, Pixian, Chengdu, Sichuan, China}
+\end{document}

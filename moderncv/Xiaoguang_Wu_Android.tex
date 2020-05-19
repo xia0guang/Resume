@@ -1,0 +1,314 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+% https://files.nyu.edu/cy761/public/xiaoguangwu.pdf
+
+
+\documentclass[10pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.9, top = 1.5cm, bottom = 1.5cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+%\usepackage{hyperref}
+%\hypersetup{
+%    colorlinks=true,
+%    linkcolor=gray,
+%    filecolor=magenta,      
+%    urlcolor=cyan,
+%}
+
+% personal data
+\vspace*{-0.5cm}
+\name{Xiaoguang(Ray)}{Wu}
+%\title{title}                               % optional, remove / comment the line if not wanted
+\address{2151 Oakland Rd, Spc 268, San Jose, CA, 95131}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{(201)-423-3982}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{imwuxiaoguang@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{//github.com/xia0guang}                         % optional, remove / comment the line if not wanted
+%\social[linkedin]{xiaoguangwu}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{morlight1989}                             % optional, remove / comment the line if not wanted
+%\social[github]{xia0guang}                              % optional, remove / comment the line if not wanted
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+%\section{Objective}
+%\cvitem{}{Seeking for a Software Engineer position in Android development or web development}
+
+\vspace*{-1.3cm}
+%\vspace*{0.5cm}
+\section{Summary}
+\cvitem{} {* 3+ years experience in \textbf{Android} development, developed several applications/SDKs;}
+\cvitem{} {* Deep familiarity with debugging, performance measurement, and test-driven development; }
+\cvitem{} {* Solid understanding of Android application development processes encompassing essential stages such as design, coding, debugging, compiling, decompiling, optimizing, publishing, and updating in accordance with agile methodologies}
+\cvitem{} {* In-depth knowledge of \textbf{MVC/MVP/MVVM} design pattern and \textbf{RESTful} API ;}
+\cvitem{} {* Good communication skill, research skill, enthusiastic about new technology and trend; }
+\cvitem{} {* Programming language: Java, Swift, Javascript, SQL.}
+
+\section{Work Experience}
+
+\cventry{\footnotesize{Oct 2017 - Present}}
+{\textbf{Senior Software Engineer}}
+{GroundTruth(formerly xAd)}{}{}{
+\begin{itemize}
+\item Be responsible for full life-cycle software development of mobile applications, mobile SDKs, both iOS and Android;
+\item Led the development of Location SDK, which empowers the publishers have a better mechanism to collecting and analysis users' behavior.
+\item Location SDK uses Google Play Services Api \textbf{FusedLocationProviderApi} and other accessories like region monitoring with our algorithms to filter location intelligently and massively reduce battery consumption.
+\item Maintained the development of Display SDK, with the support of MRAID and VAST, and reached in total around 60M users.
+\item Closely worked with backend and integrated backend api with native network framework, using event bus mechanism to decouple architecture.
+\item Uploaded Location SDK framework to Maven center/bintray and fixed a few framework/binary compiling and distributing related problems.
+\item Experienced in Android Studio, Appium, Maven, Bintray, Hockapp, RESTful API, Git etc.
+\end{itemize}} 
+
+\vspace*{0.5cm}
+\cventry{\footnotesize{Feb 2016 - Sep 2017}}
+{\textbf{Software Engineer}}
+{GroundTruth(formerly xAd)}{}{}{
+\begin{itemize}
+\item Fully in charge of the development of Display SDK, with the support of MRAID and VAST, and reached in total around 60M users.
+\item Display SDK bridges the publishers and GroundTruth read-time bidding ad exchange server and eliminates the heavy UI work by providing all in one solutions and elegant responsive ad view.
+\item Uploaded Location SDK framework to Maven center/bintray and fixed a few framework/binary compiling and distributing related problems.
+\item Used Appium for UI test for Display SDK, with Python.
+\item Experienced in Android Studio, Appium, Maven, Bintray, Hockapp, RESTful API, Git etc.
+\item Solid experienced in Android SDK: Android Data Binding, Android Sensors, Handler and Messenger, Intent Services, Broadcast Receiver, Location Manager, Push Notification, Google Play Services, etc.
+\end{itemize}} 
+
+\vspace*{0.5cm}
+\cventry{\footnotesize{Jun 2015 - Dec 2015}}
+{\textbf{Software Engineer in R\&D}}
+{Samsung Research America}{}{}{
+\begin{itemize}
+\item Developed three internal indoor-map-and-localization-related Android apps.
+\item Contributed to the full lifecycle development of the application, from planning, requirements gathering, development, testing.
+\item Contributed to graphics rendering and modeling with OpenGL ES.
+\item Close cooperated with backend for database design.
+\item Solid experienced in Android SDK: Activities, Android Data Binding, Fragments, Android Sensors, Handler and Messenger, Intent Services, Broadcast Receiver, Location Manager, Push Notification, Google Play Services, etc.
+\item Followed Agile-Scrum for the entire development process.
+\item Experienced in MongoDB, RESTful API, Git, JSON, Node.js, etc.
+\end{itemize}} 
+
+
+\vspace*{0.5cm}
+\cventry{\footnotesize{Dec 2014--Jun 2015}}
+{\textbf{Android Developer}}
+{Simbiosys Mobile Solutions}{}{}{
+\begin{itemize}
+\item Contributed to the full lifecycle development of the application, from planning, requirements gathering, development, testing.
+\item UI Design and Developed using the Android SDK and real Android Device.
+\item Contributed implementation of backend server and  RESTFul API  with Django and Parse.
+\item Followed Agile-Scrum for the entire development process.
+\item Experienced in Android debugging tools such as Monitor, DDMS, ADB, Logcat and Eclipse addons ADT tools.
+\end{itemize}} 
+
+%\vspace*{-0.5cm}
+%\section{Projects}
+%\vspace*{-0.5cm}
+%\cventry{\footnotesize{}}
+%{
+%{{Calendar Organizer -- Calink, Android app}}
+%\textit{\footnotesize{ Java}}
+%}
+%{}{}{}
+%{
+%\begin{itemize}
+%  \item {App Link: \url{https://goo.gl/UQsCH9}}
+%  \item App provides a cloud services for sharing and organizing calendars for a family or a group with features: notification, Google Calendar integration, account management(sign in and sign up).
+%  \item Implemented a backend server with Parse API for storing data and providing real-time syncing.
+%  \item Implemented SQLite database on client side for caching data and use incremental syncing and soft delete.  
+%  \item Designed UI including material design like floating action button and Cardview, Recyclerview usage.
+%  \item Used publish-subscrib pattern for event dispatching. 
+%  \item Frameworks used: Google Cloud Message, Google Calendar Api,  SQLite.
+%\end{itemize}
+%}  
+%
+%
+%\vspace{-0.5cm}
+%\cventry{\footnotesize{}}
+%{
+%{{Searching Parking , Android app}}:
+%\textit{\footnotesize{Java}}
+%}
+%{}{}{}
+%{
+%\begin{itemize}
+%  \item {App Link: \url{https://goo.gl/ExDOiZ}}
+%  \item The app used Google Map API, Yelp API, Web-request, Fragments, AsyncTask and multithreading.
+%  \item Rich user interface design with both ListView and MapView, and super easy for the users to use.
+%  \item Designed, coded, implemented, and submitted the Parking Lots app.
+%  \item QA Tested the app and debugged the app in different API levels and multiple android devices. 
+%  \item Frameworks used: Google Map Api, Yelp Api, oAuth 2.0;
+%\end{itemize}
+%}  
+
+
+%\vspace{-0.1cm}
+%\cventry{\footnotesize{}}
+%{
+%{{Image search engine, SIT}}:
+%\textit{\footnotesize{ C++, Python}}
+%}
+%{}{}{}
+%{
+%\begin{itemize}
+%  \item Applied openCV (open source library) for image analysis and K-Means clustering for features collection;
+%  \item Applied TF-IDF(Term Frequency--Inverse Document Frequency) for image searching and KNN (K-nearest neighbors) algorithm for image classification;
+%  \item Provided a web server for image query with Django Frameworks and SQLite Database;
+%%  \item Applied LSH(Locality Sensitive Hashing) method for image preprocessing to reduce retrieval time;
+%  \item Grabbed more than 20,000 images from web and preprocessed massive amount of images for image search; \newline
+%  \item Frameworks used: openCV, SQLite, Django;
+%\end{itemize}
+%}  
+
+
+%\vspace*{-0.1cm}
+%\cventry{\footnotesize{}}
+%{
+%{{Clinic Database System, SIT}}:
+%\textit{\footnotesize{ Java}}
+%}
+%{}{}{}
+%{
+%\begin{itemize}
+%  \item Deployed J2EE EJB (session beans) for modular construction and JPA (Java Persistence API) to manage persistence;
+%  \item Stored all data with PostgreSQL Database system.
+%  \item Implemented a web client for the database system running on Amazon EC2 with Glassfish;
+%  \item Provided a domain-driven design with patterns: Gateway Pattern, Factory Pattern, Repository (DAO) Pattern and Aggregate and Visitor Pattern; \newline
+%  \item Frameworks used: EJB(Enterprise Java Bean), JPA(Java Persistence API),  PostgreSQL, Glassfish, AWS.
+%\end{itemize}
+%}  
+
+
+
+%\vspace*{-0.1cm}
+%\cventry{\footnotesize{Sep 2013--Sep 2013}}
+%{{Daily Tasks (Get Things Done App) on iOS}:
+%\textit{\footnotesize{ Objective C}}}
+%{}{}{}
+%{
+%\begin{itemize}%
+%  \item Designed a GTD App to manage all your daily stuff and track habits;
+%  \item Developed local notification functionality for task reminding;
+%  \item Applied Core Data to store and retrieve data of daily task of all users;
+%\end{itemize}
+%}  
+
+
+
+%\vspace*{-0.1cm}
+%\cventry{\footnotesize{Sep 2013--Nov 2013}}
+%{{Implementation of DHT(Distributed Hash Table) System}:
+%\textit{\footnotesize{ Java}}}
+%{}{}{}
+%{
+%\begin{itemize}
+% \item Designed a simple peer-to-peer structured overlay network, a distributed hash table (DHT), deployed on Amazon EC2.
+% \item Implemented with REST Protocol with JAX/RS API based on Grizzly Web Server.
+%\end{itemize}
+%}  
+
+
+
+%\vspace*{-0.1cm}
+%\cventry{\footnotesize{Jun 2013--Jun 2013}}
+%{{Query Processing engine for ad-hoc OLAP, SIT}:
+%\textit{\footnotesize{ Java}}}
+%{}{}{}
+%{
+%\begin{itemize}
+% \item Implemented a query processing engine for ad-hoc OLAP extend SQL syntax known as MF (Multiple Feature);
+% \item Applied JDBC (Java Database Connectivity) API for connection between Java and PostgreSQL database;
+% \item Retrieved database schema from PostgreSQL DB system so that the engine can be applied on different database;
+%\end{itemize}
+%} 
+
+
+
+%\vspace*{-0.1cm}
+%\cventry{\footnotesize{March 2011--Jun 2011}}
+%{\textbf{Capacitance and Inductance meter, SWJTU}:
+%\footnotesize{C++}}
+%{}{}{}
+%{
+%\begin{itemize}%
+%  \item Designed a device for measuring unknown capacitance  and inductance;
+%  \item Created a C++ program running on microprocessor for frequency providing and measuring;
+%  \item Embedded a LED display on meter with a LED controlled program for result display
+%\end{itemize}
+%} 
+
+%\vspace*{-0.5cm}
+\section{Education}
+\cventry{\footnotesize{Sep 2012--May 2014}}
+{\textbf{M.Sci. in Computer Science}}
+{Stevens Institute of Technology}{}{\textit{GPA: 3.6/4.0}}{}  % arguments 3 to 6 can be left empty
+%\vspace*{-0.3cm}
+\cventry{\footnotesize{Sep 2007--Jun 2011}}
+{\textbf{B.Eng. in Electrical Engineering}}
+{Southwest Jiaotong University}{}{}{}
+
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\clearpage
+%%-----       letter       ---------------------------------------------------------
+%% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+%
+%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+%
+%\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
