@@ -1,0 +1,135 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+% https://files.nyu.edu/cy761/public/xiaoguangwu.pdf
+
+
+\documentclass[10pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.9, top = 1.5cm, bottom = 1.5cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+%\usepackage{hyperref}
+%\hypersetup{
+%    colorlinks=true,
+%    linkcolor=gray,
+%    filecolor=magenta,      
+%    urlcolor=cyan,
+%}
+
+% personal data
+\vspace*{-0.5cm}
+\name{吴}{晓光}
+%\title{31}                               % optional, remove / comment the line if not wanted
+\address{圣何塞, 加州， 年龄：31}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{(201)-423-3982}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{imwuxiaoguang@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{//github.com/xia0guang}                         % optional, remove / comment the line if not wanted
+%\social[linkedin]{xiaoguangwu}                        % optional, remove / comment the line if not wanted
+%\social[twitter]{morlight1989}                             % optional, remove / comment the line if not wanted
+%\social[github]{xia0guang}                              % optional, remove / comment the line if not wanted
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+%\section{Objective}
+%\cvitem{}{Seeking for a Software Engineer position in Android development or web development}
+
+\vspace*{-1.3cm}
+\section{Summary}
+\cvitem{} {* 5五年以上手机开发经验，专注于iOS; }
+\cvitem{} {* 非常熟练运用调试，测试为首的开发方式 }
+\cvitem{} {* 对于大型手机开发环境有足够多的深入的研究和经验，能够熟练的运用Buck, Snapshot Test等工具来确保手机开发过程的可靠性，以及通过特性标记(feature flag)工具来确保app推出的时候的质量; }
+\cvitem{} {* 能够熟练的使用苹果的第一方框架如CoreFoundation, UIKit等， 以及广泛被使用的第三方开源框架如SnapKit，RxSwift; }
+\cvitem{} {* 对于广泛被认可的设计模式比如MVC，MVVM有足够深入的了解和认识。同时对于Uber自创的新的跨平台软件设计框架RIB和Dependency Injectio 工具Needle有绝对深刻的认识; }
+\cvitem{} {* 有很好的中英文沟通能力，研究能力，解决问题的能力，对于新的知识和技术有强烈的兴趣去了解和跟进; }
+\cvitem{} {* 熟练使用的编程语言包括: \textbf{Swift, Objective C, Java, Python}. }
+
+\section{Work Experience}
+
+\cventry{\footnotesize{11/2018 - 现在}}
+{\textbf{软件工程师}}
+{Uber Technologies, Inc.}{旧金山, 加州}{}{
+\begin{itemize} 
+\item 作为Tech Lead 计划，设计所有的iOS工程，领导整个组的iOS端的开发工作，确保开发质量，以及帮助新加入的iOS工程师快速的上手. 
+\item 在账户注册和登陆模块扮演了举足轻重的角色，开发了一套新的库来统一登陆注册的用户体验，大大的提升了开发效率和解决了很多历史遗留问题。 
+\item 在迁移旧的token机制到新的业界标准的OAuth2.0协议中表现突出，显著的提升了Uber旗下所有app的安全性能.
+\item 参与Uber旗下信息传输平台的开发以及实现了一些能够显著提升用户对于Uber非常注重隐私及安全的努力的认知的特性.
+\item 对于大型手机开发环境有足够多的深入的研究和经验，能够熟练的运用Buck, Snapshot Test等工具来确保手机开发过程的可靠性，以及通过特性标记(feature flag)工具来确保app推出的时候的质量. 
+\item 能够熟练的使用苹果的第一方框架如CoreFoundation, UIKit等， 以及广泛被使用的第三方开源框架如SnapKit，RxSwift.
+\end{itemize}} 
+
+\vspace*{0.5cm}
+\cventry{\footnotesize{02/2016 - 11/2018}}
+{\textbf{Senior Software Engineer}}
+{GroundTruth}{山景城, 加州}{}{
+\begin{itemize}
+    \item 领导团队着手开发一个叫做LocationSDK的开发者组建工程项目，使公司能够智能的按照内部的逻辑来收集用户的位置信息.
+    \item LocationSDK 使用iOS的CLLocationManager 以及其他组建包括区域监控(region monitoring)和其他一系列的算法来智能的过滤掉无用的重复的位置信息，从而减少信息的传递以及电池的损耗。
+    \item 领导团队着手开发一个叫做DisplaySDK的工程项目，SDK能够支持MRAID和VASH广告协议，SDK被超过6千万用户使用。
+    \item 与后端工程师有着紧密的合作.能够熟练的运用通知机制来解耦手机端框架架构
+    \item 上传部署了LocaionSDK和DisplaySDK到Cocoapod，以及解决所有兼容性和分发过程中出现的问题
+    \item 能够相当熟练的运用Xcode，Appium，Cocoapod，Hockyapp，Restful API，Git等工具的
+\end{itemize}} 
+
+
+\vspace*{0.5cm}
+\cventry{\footnotesize{06/2015 - 12/2015}}
+{\textbf{Software Engineer, Contractor}}
+{三星北美研究中心}{山景城, 加州}{}{
+\begin{itemize}
+    \item 开发室内定位Android演示软件.
+    \item 参与软件开发的所有生命周期，包括计划， 要求收集，具体实现，测试及调试.
+    \item 参与运用OpenGL ES来做图像渲染与建模的开发
+    \item 与后端工程师合作设计数据库
+    \item 熟练的使用Android SDK的重要框架包括：Activity, Fragment, Android Data Binding, Android Sensors, Handler and Messenger, Intent Services, Broadcast Receiver, Location Manager/FusedLocationProviderApi, Push Notification, Google Play Services, etc.
+    \item 在日常工作中能够熟练的运用敏捷开发方式.
+    \item 能够相当熟练的运用MongoDB, RESTful API, Git, JSON等工具.
+\end{itemize}} 
+
+%\vspace*{-0.5cm}
+\section{Education}
+\cventry{\footnotesize{09/2012 - 05/2014}}
+{\textbf{计算机科学软件硕士学位}}
+{斯蒂文斯理工}{}{}{}  % arguments 3 to 6 can be left empty
+%\vspace*{-0.3cm}
+\cventry{\footnotesize{09/2007 - 06/2011}}
+{\textbf{电机工程学士学位}}
+{西南交通大学}{}{}{}
+
+\end{CJK*}
+\end{document}
+
+
+
+%% end of file `template.tex'.
